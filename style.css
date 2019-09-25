@@ -1,0 +1,161 @@
+/*DEBUG CODE
+* {
+  border: red solid 2px;
+  margin: 8px;
+  background-color: rgba(0,0,0,0.15);
+  }
+*/
+
+
+/*COLOR REFERENCE
+
+rgb(210,230,230) = light blue
+rgb(15,60,85) = dark slightly turquoise
+rgb(15,70,85) = dark turquoise
+rgb(230,230,230) = lightest gray
+rgb(200,200,200) = light gray
+rgb(150,150,150) = medium gray
+rgb(50,50,50) = darkest gray
+*/
+
+body {
+  background-color: rgb(200,230,230); 
+  color: black;
+  margin: 0px;
+  text-align: center;
+  font-family: arial;
+}
+
+.round-image {
+  height: 100px;
+  border-radius: 300px;
+}
+
+#main-title {
+	font-size: 350%;
+  background-color: rgb(15,60,85);
+  color: white;
+  padding: 30px;
+}
+
+/* TABLE OF CONTENT */
+#toc {
+  background-color: rgb(150,150,150);
+  margin-top: 20px;
+  padding:30px 50px;
+  text-align: left;
+}
+
+#table-title {
+  font-size: 160%;
+  font-weight: bold;
+}
+
+#flex-table-list {
+  font-size: 120%;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.table-subitems {
+  margin:10px 20px;
+}
+
+/* NOTES */
+#notes {
+  background-color: rgb(50,50,50);
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+/* STAGE */
+.stage { 
+  padding: 10px 100px;
+}
+
+.stage-pic {
+  height:100px;
+  width: 75%;
+}
+
+.stage-title {
+  background-color: rgb(40,100,120);
+  color:white;
+  font-size: 180%; 
+  font-weight: bold;
+  margin-top: 20px;
+  padding:25px;
+  border-radius: 10px;
+}
+
+/* TOPIC */
+.topic {
+  background-color: rgb(200,200,200);
+  padding: 25px;
+  margin: 20px 0px;
+  border-radius: 10px;
+ }
+
+.topic-title {
+  background-color: rgb(150,150,150);
+  padding: 25px;
+  font-size: 150%;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.topic-content {
+  text-align: left;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.tab-once {
+  padding-left: 30px;
+  font-family: courier;
+  font-size: 90%;
+}
+
+.code-sample {
+  border: rgb(150,150,150) solid 1px;
+  background-color: rgb(230,230,230);
+  width:300px;
+  padding:10px 30px;
+}
+
+/* TABLE */
+table {
+   width: 95%;
+   color: black;
+}
+
+.tag-col1,
+.tag-col2,
+.tag-col3,
+.attribute-col1,
+.attribute-col2,
+.attribute-col3 {
+  background-color: rgb(210,230,230);
+}
+.tag-col1 {
+  width:15%;
+}
+.tag-col2 {
+  width:25%;
+}
+.tag-col3 {
+  width:60%;
+}
+
+.attribute-col1,
+.attribute-col3 {
+  width:40%;
+}
+.attribute-col2 {
+  width:20%;
+}
+
+
+
+

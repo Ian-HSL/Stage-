@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ian's Notes
+  </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <!--HEADER IMAGES -->
+  <div>
+    <img src="images/circuit.jpg" alt="circuit">
+    <div>
+      <img class="round-image" src="images/ian.jpg" alt="Ian">
+    </div>
+  </div>
+  <!--MAIN TITLE-->
+  <div id="main-title"> Intro to Programming</div>
+  <!--NOTEBOOK-->
+  <div>
+    <!--TABLE OF CONTENT-->
+    <div id="toc">
+      <div id="table-title">Table of Contents</div>
+      <div id="flex-table-list">
+        <!--STAGE 0 BOOKMARKS-->
+        <div>
+          <ul>
+            <li class="table-item">
+              <a href="#stage0"> <strong>Stage 0 Notes</strong></a>
+              <div class="table-subitems">
+                <a href="#the-web">The Web</a><br>
+                <a href="#html-markups">HTML Markups</a><br>
+                <a href="#whitespace">Whitespace</a><br>
+                <a href="#inline-and-block">Inline and Block</a><br>
+                <a href="#html-doc-structure">HTML Document Structure</a><br>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!--STAGE 1 BOOKMARKS-->
+        <div>
+          <ul>        
+            <li class="table-item">
+              <a href="#stage1"> <strong>Stage 1 Notes</strong></a>
+              <div class="table-subitems">
+                <a href="#programming-languages">Programming Languages</a><br>
+                <a href="#dom-document-object-model">Dom(Document Object Model)</a><br>
+                <a href="#boxes">Boxes</a><br>
+                <a href="#developer-tools">Developer Tools</a><br>
+                <a href="#css">CSS</a><br>
+              </div>
+            </li>
+          </ul> 
+        </div>
+      </div>
+    </div> 
+
+    <div id="notes">  
+      <!--STAGE 0-->
+      <div id = "stage0" class="stage">
+        <img class="stage-pic" src="images/matrix.jpg" alt="matrix">
+        <div class ="stage-title">Stage 0 Notes</div>
+        
+        <!--THE WEB-->
+        <div id="the-web" class="topic">
+          <div class="topic-title">The Web
+          </div>
+          
+          <div class="topic-content">
+            <ul>
+              <li> 
+                The web is a collection of HTML documents. It was invented in the early 1990's and has an estimated 30 billion pages.<br><br>
+              </li>
+              <li>
+                The major components of the Web are the user, the computer which is running a browser, the Internet, and the servers.The servers communicate using a protocol called HyperText Transport Protocol(HTTP). When the user accesses a web page, the browser sends requests through the internet to the server which hosts the web page. The server then responds with files which the browser interprets and displays on the monitor for the user.
+              </li>
+            </ul>
+          </div>
+        </div>      
+
+        <!--HTML MARKUPS-->
+        <div id="html-markups" class="topic">  
+          <div class="topic-title">HTML Markups
+          </div>
+          <div class="topic-content">
+            <ul>
+              <!-- ELEMENTS -->
+              <li>
+                <strong>Elements</strong> : HTML markups are made up of elements. Elements are composed of opening and closing tags and content.<br><br>
+                <ul>
+                  <li>
+                    <strong>Structure</strong>:<br><br>
+                    <div class="tab-once">
+                      <div class="code-sample">
+                        &lt;TAG&gt; content &lt;/TAG&gt;   
+                      </div>
+                    </div><br>
+                  </li>
+                  <li>
+                    <strong>Examples</strong>:<br><br>
+                    <div class="tab-once">
+                      <table>
+                        <colgroup>
+                          <col class="tag-col1">
+                          <col class="tag-col2">
+                          <col class="tag-col3">
+                        </colgroup>
+                        <tr><td>&lt;b&gt;</td><td>Bold tag</td><td>makes text bold</td></tr>
+                        <tr><td>&lt;em&gt;</td><td>Emphasis tag</td><td>makes text italic</td></tr>
+                        <tr><td>&lt;li&gt;</td><td>List tag</td><td>defines a list item</td></tr>
+                      </table><br><br>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+               
+              <!--ATTRIBUTES-->
+              <li>
+                <strong>Attributes</strong> : HTML attributes are properties of an element. <br><br>
+                <ul>
+                  <li>
+                    <strong>Structure</strong>:<br><br>
+                    <div class="tab-once">
+                      <div class="code-sample">
+                        &lt;TAG ATTR="value"&gt; content &lt;/TAG&gt; 
+                      </div> 
+                    </div><br>
+                  </li>
+                  <li>          
+                    <strong>Examples</strong>:<br><br>
+                    <div class="tab-once">
+                      <table>
+                        <colgroup>
+                          <col class="attribute-col1">
+                          <col class="attribute-col2">
+                          <col class="attribute-col3">
+                        </colgroup>
+                        <tr><td>&lt;a href="url"&gt; content &lt;/a&gt;</td><td>href</td><td>specifies url of the webpage</td></tr>
+                        <tr><td>&lt;img src="url"&gt;</td><td>src</td><td>adds image from the link</td></tr>
+                        <tr><td>&lt;TAG class="value"&gt;</td><td>class</td><td>specifies class name for an element</td></tr>
+                        <tr><td>&lt;TAG width ="value"&gt;</td><td>width</td><td>specifies width of an element</td></tr>
+                      </table>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>   
+        </div> 
+      
+        <!--WHITESPACE-->
+        <div id="whitespace" class="topic">
+          <div class="topic-title">Whitespace
+          </div>
+          
+          <div class="topic-content"> 
+            <ul>
+              <li>
+                 Multiple white-space characters (such as space and line feed) are collapsed to just one space when rendered by the web browser.<br><br>
+              </li>              
+              <li> 
+                The following are useful for creating line feeds:<br><br>
+                <div class="tab-once">
+                  <table>
+                    <colgroup>
+                        <col class="tag-col1">
+                        <col class="tag-col2">
+                        <col class="tag-col3">
+                    </colgroup>
+                    <tr><td>&lt;br&gt;</td><td>Break tag</td><td>inserts a line feed</td></tr>
+                    <tr><td>&lt;p&gt;</td><td>Paragraph tag</td><td>defines a paragraph</td></tr>
+                    <tr><td>&lt;div&gt;</td><td>Division tag</td><td>defines a division</td></tr>
+                  </table><br><br>
+                </div>
+              </li>
+              <li>
+                To create multiple spaces, try:<br><br>
+                <div class="tab-once">
+                  <table>
+                    <colgroup>
+                      <col class="tag-col1">
+                      <col class="tag-col2">
+                      <col class="tag-col3">
+                    </colgroup>
+                    <tr><td>&lt;pre&gt;</td><td>Preformatted text tag</td><td>enables fixed width font and preserves spaces and line breaks</td></tr>
+                    <tr><td>&amp;nbsp&semi;</td><td>Non-breakable space (character entity)</td><td>makes a non-breakable space</td></tr>
+                    <tr><td>&amp;emsp&semi;</td><td>Em space (character entity)</td><td>makes two non-breakable spaces</td></tr>
+                  </table>
+                </div>
+              </li>
+            </ul>
+          </div> 
+        </div> 
+
+        <!--INLINE AND BLOCK-->
+        <div id="inline-and-block" class="topic">
+          <div class="topic-title">
+            Inline and Block
+          </div>
+          <div class="topic-content"> 
+            <ul>
+              <li>
+                <strong>Block element</strong>: Starts on a new line and takes up the entire available width. <br><br>
+                <div class="tab-once">
+                  <table>
+                    <colgroup>
+                      <col class="tag-col1">
+                      <col class="tag-col2">
+                      <col class="tag-col3">
+                    </colgroup>
+                    <tr><td>&lt;p&gt;</td><td>Paragraph tag</td><td>defines a paragraph</td></tr>
+                    <tr><td>&lt;div&gt;</td><td>Division tag</td><td>defines a division</td></tr>
+                    <tr><td>&lt;form&gt;</td><td>Form tag</td><td>creates a form for user input</td></tr>
+                  </table><br><br>
+                </div>
+              </li>
+              <li>
+                <strong>Inline element</strong>: Does not create a new line. It only takes up as much width as necessary.<br><br>
+                <div class="tab-once">
+                  <table>
+                    <colgroup>
+                      <col class="tag-col1">
+                      <col class="tag-col2">
+                      <col class="tag-col3">
+                    </colgroup>
+                    <tr><td>&lt;a&gt;</td><td>Anchor tag</td><td>creates a hyperlink</td></tr>
+                    <tr><td>&lt;span&gt;</td><td>Span tag</td><td>groups inline elements</td></tr>
+                    <tr><td>&lt;br&gt;</td><td>Break tag</td><td>inserts a single line break</td></tr>
+                    <tr><td>&lt;img&gt;</td><td>Image tag</td><td>inserts an image</td></tr>
+                    <tr><td>&lt;strong&gt;</td><td>Strong tag</td><td>defines important text</td></tr>
+                  </table>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--HTML DOCUMENT STRUCTURE-->
+        <div id="html-doc-structure" class="topic">
+          <div class="topic-title">
+            HTML Document Structure
+          </div>
+          <div class="topic-content"> 
+            <ul>
+              <li>
+                <strong>HTML Document Structure</strong><br><br>
+                <div class="tab-once"> 
+                  <div class="code-sample">
+                    &lt;!DOCTYPE HTML&gt; <br>
+                    &lt;html&gt;<br>
+                    &lt;head&gt;<br>
+                    <div class="tab-once">
+                      &lt;title&gt;<b>title</b>&lt;title&gt;<br>
+                    </div>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    <div class="tab-once">
+                      ....content.... <br>
+                    </div>
+                    &lt;/body&gt; <br>
+                    &lt;/html&gt;
+                  </div>
+                </div><br><br>
+              </li>                           
+              <li>
+                The Doctype tag tells what type of HTML is running the program. The "HTML" stands for HTML5.<br><br>
+              </li>
+              <li>
+                The opening and ending HTML tags enclose the entire document.<br><br>
+              </li>
+              <li>
+                The opening and ending "head" tags enclose the title of the document.<br><br>
+              </li>
+              <li>
+                The opening and ending "body" tags enclose the content of the document from text to hyperlinks to images.
+              </li>
+            </ul> 
+          </div>
+        </div>
+      </div>
+    
+      <!--STAGE 1-->
+      <div id="stage1" class="stage">
+        <img class="stage-pic" src="images/matrix.jpg" alt="matrix">
+        <div class="stage-title">
+          Stage 1 Notes
+        </div>
+        
+        <!--PROGRAMMING LANGUAGES-->      
+        <div id="programming-languages" class="topic">
+          <div class="topic-title">
+            Programming Languages
+          </div>
+          <div class="topic-content"> 
+            <ul>
+              <li>
+                HTML: Defines the structure of every webpage in the Internet.<br><br>
+              </li>
+              <li>
+                CSS: (Cascading Style Sheets) Describes the style and look of HTML documents.<br><br>
+              </li>
+              <li>
+                JavaScript: Describes the interactive component of webpages.<br><br>
+              </li>
+            </ul>        
+          </div>
+        </div>
+        
+        <!--DOM (DOCUMENT OBJECT MODEL)-->
+        <div id="dom-document-object-model" class="topic">
+          <div class="topic-title">
+            DOM (Document Object Model)
+          </div>
+          <div class="topic-content">
+            <ul>
+              <li>
+                DOM (Document Object Model) defines the logical structure of HTML documents and how they are accessed and manipulated.<br><br>
+              </li>
+              <li> 
+                A browser turns HTML element, attributes, and texts into nodes which form a tree-like structure.  Here is an example of a DOM tree.<br><br>
+                <div style="text-align:center">
+                  <img src="Images/dom-tree.jpg" alt="DOM tree"></div>
+              </li>
+            </ul>                
+          </div>
+        </div>
+        
+        <!--BOXES-->  
+        <div id="boxes" class="topic">
+          <div class="topic-title">
+            Boxes
+          </div>
+          <div class="topic-content">
+            <ul>
+              <li>
+                Webpages can be divided into logical boxes which can be manipulated and organized easily.<br><br>
+              </li>
+              <li>
+                Each of these boxes can be defined using tags such as &lt;div&gt;, &lt;span&gt;, etc..<br><br>
+              </li>
+              <li>           
+                Boxifying is the practice of drawing boxes around images and texts, and it is very useful for designing the layout of webpages. <br><br>
+              </li>
+              <li>
+                Each box consists of the content, padding, and border. The content is the texts, images, etc. The padding is the space between content and border. There is also margin which is the space between boxes.<br><br>
+                <div style="text-align: center;">
+                  <img src="Images/box.jpg" alt="box">
+                </div><br><br>
+              </li>
+              <li>
+                The width of an element is the sum of the width of content, padding, and border. To easily get the width of the element, use the style "box-sizing: border-box;". To make sure it works for most browsers, use the following in the style sheet. <br><br>
+                <div class="tab-once">
+                  <div class="code-sample">
+                    <br>/* for Chrome, Safari, Opera */ <br>
+                    -webkit-box-sizing: border-box;  <br><br>
+                    /* for Firefox */ <br>
+                    -moz-box-sizing: border-box;     <br><br>
+                    /* for IE */ <br>
+                    -ms-box-sizing: border-box;       <br><br>
+                    box-sizing: border-box;<br><br>
+                  </div>
+                </div><br><br>
+              </li>
+              <li>
+                Maximum width of an element can be defined by using the selector max-width:value where value can be number of pixels or percentage of screen width.
+                            
+            </ul>
+          </div>
+        </div>
+        
+        <!--DEVELOPER TOOLS-->
+        <div id="developer-tools" class="topic">
+          <div class="topic-title">
+            Developer Tools
+          </div>
+          <div class="topic-content"> 
+            <ul>
+              <li>
+                Browser developer tools, such as Google Chrome developer tools, can be used to inspect and modify the underlying structure of webpages easily.<br><br>
+              </li>
+              <li>
+                Using <strong>Google Chrome developer tools</strong>:<br><br>
+                <ul>
+                  <li>
+                    There are three useful panes for browser, HTML code and CSS.<br><br>
+                  </li>
+                  <li>
+                    Mouse over an element in HTML code, and a box containing an image, text, or just background will be highlighted in the browser pane.  <br><br>
+                  </li>
+                  <li>
+                    To see the code of an element, right click the image or text and select "inspect element". The corresponding HTML and CSS code will be displayed.<br><br>
+                  </li>
+                  <li>
+                    Attributes in CSS pane can be easily modified and the result is displayed in the browser pane. The changes to the webpage are not permanent until saved. Simply refresh the webpage to re-display.<br><br>
+                  </li>
+                </ul>  
+              </li>        
+            </ul>
+          </div>
+        </div>
+
+        <!--CSS-->
+        <div id="css" class="topic">
+          <div class="topic-title">
+            CSS
+          </div>
+          <div class="topic-content"> 
+            <ul>
+              <li>
+                CSS stands for Cascading Style Sheets. It defines formatting of HTML elements thus the "look" of the webpage.<br><br>          
+              </li>           
+              <li> 
+                CSS selectors are used to select and manipulate HTML elements. The tag selector is used to select elements with a specific tag, while the class selector is used to select elements with a specific class. The id selector can also be used to select elements with a specific id. Here are examples of what selectors might look like:<br><br>
+                <div class="tab-once">
+                  <div class="code-sample">
+                    <br>/* Tag as a selector */<br>
+                    p {<br>
+                    &emsp;color:red;<br>
+                    }<br><br>
+                    /* Class as a selector */<br>
+                    .my-class {<br>
+                    &emsp;font-family: courier;<br>
+                    }<br><br>
+                    /* Id as a selector */<br>
+                    #my-id {<br>
+                    &emsp;width: 300px;<br>
+                    }<br><br>
+                  </div>
+                </div><br><br>
+              </li>
+              <li>
+                <strong>Benefits of CSS</strong>:<br><br>
+                <ul>
+                  <li>
+                    By eliminating code repitition using CSS, less coding is needed and the time required for coding is reduced. Writing code just once in CSS instead of duplicating the same code in multiple HTML elements saves time and tremendous amount of effort. <br><br>
+                  </li>
+                  <li>
+                    Code is easier to read thus mistakes are minimized. <br><br>
+                  </li>
+                  <li>
+                    Mistakes are easier to debug and fix.<br><br>
+                  </li>
+                  <li>
+                    Future code modifications are fairly easy to implement.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
